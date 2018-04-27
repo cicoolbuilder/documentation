@@ -2,6 +2,47 @@
 
 for now provides various functions for such purposes
 
+### make extension
+
+> extension structure for your new extension
+
+#### A typical top-level directory layout
+
+    . myextension
+    ├── config
+    ├── libraries
+    ├── ext.json 
+    ├── myextension.php    
+    └── README.md
+
+
+on ext.json 
+
+```json
+{
+    "name" : "my extension",           
+    "description" : "my extension",
+    "type" : "page",                  
+        "version" : "1.0",                
+        "author" : "cicool",             
+        "regid" : "myextension",          
+        "routes" : [
+        "administrator/page/(:any)" 
+    ],
+    "loader" : [
+        "myextension.php" 
+    ]
+}
+```
+
+?> `type` for extension like page, crud, rest for groupping
+
+?> `regid` must same like your extension folder name and must unique
+
+?> `routes` is optional extension will be run on specific routes you can define multiple routes
+
+?> `register` file for first loader on your extension you can define multiple
+
 ### load library 
 ```php
 app()->load->library('cc_html');
