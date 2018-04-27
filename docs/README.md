@@ -2,13 +2,13 @@
 
 for now provides various functions for such purposes
 
-### function for load library 
+### load library 
 ```php
 app()->load->library('cc_html');
 ```
 ?> you can load library from `application/libraries` or `myextension/libraries`
 
-### function for register script file
+### register script file
 ```php
 app()->cc_html->registerScriptFile('alert("hello")', "script"); 
 ```
@@ -18,13 +18,13 @@ you can fill parameter 2 to file if you load javascript resorce from url
 app()->cc_html->registerScriptFileBottom('http://example.com/js/script.js', "file"); 
 ```
 
-### function for register css file
+### register css file
 ```php
 $base_url_extension = url_extension(basename(__DIR__)); 
 app()->cc_html->registerCssFile($base_url_extension . 'asset/css/main.css'); 
 ```
 
-### function for register menu
+### register menu
 ```php
 
 cicool()->addMenu(cicool()::ADMIN_SIDEBAR_MENU, [
@@ -47,7 +47,7 @@ cicool()->addMenu(cicool()::ADMIN_SIDEBAR_MENU, [
 `menu_type_id` can filled `cicool()::TYPE_MENU` or `cicool()::TYPE_LABEL`
 
 
-### function for option
+### option
 
 #### add option
 ```php
@@ -79,7 +79,7 @@ cicool()->optionExists($option_name)
 ```
 if not exist return is `false`, if exists return option value
 
-### function for event
+### event
 
 #### event listen 
 ```php
