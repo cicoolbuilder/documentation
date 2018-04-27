@@ -1,12 +1,11 @@
-![logo](_media/icon.svg)
+![logo](icon.png)
 
-# docsify <small>4.6.10</small>
+# cicool <small>1.0</small>
 
-> A magical documentation site generator.
+> CRUD, API, Page and Form Generator.
 
-* Simple and lightweight (~19kB gzipped)
 * No statically built html files
 * Multiple themes
 
-[GitHub](https://github.com/QingWei-Li/docsify/)
-[Get Started](#docsify)
+[GitHub](https://github.com/)
+[Purchase](https://codecanyon.net/item/cicool-page-form-rest-api-and-crud-generator/19207897?ref=ridwanskaterocks)
